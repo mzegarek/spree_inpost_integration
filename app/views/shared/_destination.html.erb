@@ -1,9 +1,16 @@
 <div id="inpost">
   <h4><%= t('inpost.destination') %></h4>
   <div class="well">
-    <select name="order[inpost_machine]" class="form-control select2" id="order_inpost_machine" data-zipcode="<%= @zipcode %>"></select>
-    <div class="get-more-container">
-      <a href="#" id="read_more_inpost"><%= t('inpost.read_more') %></a>
+    <div class="row">
+      <div class="col-sm-8">
+        <select name="order[inpost_machine]" class="form-control select2" id="order_inpost_machine" data-zipcode="<%= @zipcode %>"></select>
+      </div>
+      
+      <div class="col-sm-4">
+        <div class="get-more-container">
+          <a href="#" id="read_more_inpost" class="btn btn-block btn-default"><%= t('inpost.read_more') %></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
